@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.calculator";
+option java_outer_classname = "CalculatorProto";
+
+service CalculatorService {
+  rpc Calculate (CalcRequest) returns (CalcResponse);
+}
+
+message CalcRequest {
+  double a = 1;       // valor1
+  double b = 2;       // valor2
+  double c = 3;       // valor3
+  string operation = 4; // "add", "sub", "mul", "div", "rule3"
+}
+
+
+message CalcResponse {
+  double result = 1;
+  string message = 2;
+}
+
