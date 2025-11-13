@@ -1,4 +1,4 @@
-# SistemasDistribuidos — Como rodar
+# Remote Procedure Call (RPC) 
 
 Este repositório contém um serviço gRPC (calculadora) gerado a partir de `src/main/proto/calculator.proto` e implementado em Java.
 
